@@ -16,11 +16,57 @@
         .font-montserrat {
             font-family: 'Montserrat', sans-serif;
         }
+
+        .bg {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(163deg, rgba(146, 229, 217, 1) 0%, rgba(201, 224, 230, 1) 0%, rgba(230, 238, 222, 1) 100%);
+        }
     </style>
 </head>
 
 <body class="font-montserrat">
+    <h1 class="text-4xl mt-3 font-bold text-center text-[rgb(49,165,172)]">Money Master &#128176;</h1>
+    <div class="container w-[90%] mx-auto flex flex-col md:flex-row h-screen gap-12 mt-5">
+        <div class="left w-full lg:w-[50%]">
+            <img class="h-[85%] rounded-lg" src="money.jpg" alt="">
+        </div>
+        <div class="right bg h-[85%] w-full lg:w-[50%] rounded-lg p-8">
+            <div class="main-calculation w-[70%] mx-auto space-y-3">
+                <h3 class="text-black font-medium text-center text-2xl">Income</h3>
+                <div class="flex justify-between">
+                    <label for="" class="text-black font-medium text-center text-xl w-[30%] mr-1">Income:</label>
+                    <input class="bg-slate-100 rounded-sm py-1 px-1 w-[70%]" type="number" name="" id="">
+                </div>
 
+                <h3 class="text-black font-medium text-center text-2xl mt-2">Expenses</h3>
+                <div class="flex justify-between">
+                    <label for="" class="text-black font-medium text-center text-xl w-[30%] mr-1">Food:</label>
+                    <input class="bg-slate-100 rounded-sm py-1 px-1 w-[70%]" type="number" name="" id="">
+                </div>
+                <div class="flex justify-between">
+                    <label for="" class="text-black font-medium text-center text-xl w-[30%] mr-1">Rent:</label>
+                    <input class="bg-slate-100 rounded-sm py-1 px-1 w-[70%]" type="number" name="" id="">
+                </div>
+                <div class="flex justify-between">
+                    <label for="" class="text-black font-medium text-center text-xl w-[30%] mr-1">Clothes:</label>
+                    <input class="bg-slate-100 rounded-sm py-1 px-1 w-[70%]" type="number" name="" id="">
+                </div>
+                <div class=" flex justify-center">
+                    <button class="py-2 px-4 bg-blue-500 rounded-2xl text-white font-bold">Calculate</button>
+                </div>
+                <h2 class="text-center font-bold text-xl">Total Expense: <span>0</span></h2>
+                <h2 class="text-center font-bold text-xl">Total Balance: <span>0</span></h2>
+                <div class="flex flex-col lg:flex-row space-x-2 items-center">
+                    <label class="text-black font-medium text-center text-xl mr-1" for="">Save:</label>
+                    <input class="bg-slate-100 rounded-sm py-1 px-1" type="text" name="" id="">
+                    <span>%</span>
+                    <button class="py-1 px-4 bg-blue-500 rounded-2xl text-white font-bold">Calculate</button>
+                </div>
+                <h2 class="text-center font-bold text-xl">Saving Amount: <span>0</span></h2>
+                <h2 class="text-center font-bold text-xl">Remaining Balance: <span>0</span></h2>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
